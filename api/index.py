@@ -10,7 +10,7 @@ class handler(BaseHTTPRequestHandler):
 		dic = dict(parse.parse_qsl(parse.urlsplit(s).query))
 		self.send_response(200)
 		self.send_header('Content-type','application/json; charset=utf-8')
-		self.send_header('Access-Control-Allow-Origin', '*')
+		self.send_header('Access-Control-Allow-Origin', 'https://dhushor.netlify.app/')
 		self.end_headers()
 
 		hdr = {}
